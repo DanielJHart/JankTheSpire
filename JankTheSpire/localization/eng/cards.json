@@ -1,10 +1,13 @@
 {
   "JANKTHESPIRE-CRUMBLING_STRIKE.title": "Crumbling Strike",
-  "JANKTHESPIRE-CRUMBLING_STRIKE.description": "Deal {Damage:diff()} damage. Permanently decrease this card's damage by {Decrease:diff()}.",
+  "JANKTHESPIRE-CRUMBLING_STRIKE.description": "Deal {Damage:diff()} damage. \nPermanently decrease this card's damage by {Decrease:diff()}.",
 
   "JANKTHESPIRE-ALL_IN.title": "All In",
-  "JANKTHESPIRE-ALL_IN.description": "Discard Hand. Next turn gain {StrengthPower:diff()} [gold]Strength[/gold] and lose {DexterityPower:diff()} [gold]Dexterity[/gold] for each card discarded.",
+  "JANKTHESPIRE-ALL_IN.description": "Discard your hand. \nNext turn gain {StrengthPower:diff()} [gold]Strength[/gold] and lose {DexterityPower:diff()} [gold]Dexterity[/gold] for each card discarded.",
 
   "JANKTHESPIRE-SNECKO_STRIKE.title": "Snecko Strike",
-  "JANKTHESPIRE-SNECKO_STRIKE.description": "Deal {Damage:diff()} damage. Randomize the cost of this card on draw."
+  "JANKTHESPIRE-SNECKO_STRIKE.description": "Deal {Damage:diff()} damage. \nRandomize the cost of this card on draw.",
+
+  "JANKTHESPIRE-CONTROL_V.title": "Ctrl + V",
+  "JANKTHESPIRE-CONTROL_V.description": "Add a copy of the last card played to your hand. \n{IfUpgraded:show: It is free to play this turn}"
 }

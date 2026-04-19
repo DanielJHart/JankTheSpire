@@ -1,0 +1,50 @@
+﻿using BaseLib.Abstracts;
+using JankTheSpire.JankTheSpireCode.Cards;
+using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.Entities.Powers;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.Powers;
+using static BaseLib.Abstracts.CustomPowerModel;
+
+namespace JankTheSpire.JankTheSpireCode.Utils;
+
+public sealed class AllInStrengthPower : TemporaryStrengthPower, ICustomPower
+{
+    //public override AbstractModel OriginModel => (AbstractModel) ModelDb.Card<AllIn>();
+    //protected override bool IsPositive => true;
+    public override AbstractModel OriginModel { get; }
+}
+
+public class AllInDexterityPower : TemporaryDexterityPower, ICustomPower
+{
+    //public override AbstractModel OriginModel => (AbstractModel) ModelDb.Card<AllIn>();
+    public override AbstractModel OriginModel { get; }
+    protected override bool IsPositive => false;
+}
+
+public sealed class AllInPower : CustomPowerModel
+{
+    public override PowerType Type => PowerType.Buff;
+    public override PowerStackType StackType => PowerStackType.Counter;
+    public override bool AllowNegative => true;
+
+    public override async Task AfterBlockCleared(Creature creature)
+    {
+        AllInPower power = this;
+        
+        power.Flash();
+        
+        await PowerCmd.Apply<AllInStrengthPower>(power.Owner, power.Amount, power.Owner, null);
+        await PowerCmd.Apply<AllInDexterityPower>(power.Owner, power.Amount, power.Owner, null);
+        
+        // This is a temp power to apply the strength, get rid of it now.
+        await PowerCmd.Remove(power);
+    }
+
+    public class CardSource
+    {
+    }
+}

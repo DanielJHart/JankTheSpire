@@ -29,7 +29,7 @@ public class CrumblingStrike() : CustomCardModel(1,
         set
         {
             this.AssertMutable();
-            this._currentDamage = value;
+            this._currentDamage = Math.Max(value, 0);
             this.DynamicVars.Damage.BaseValue = (Decimal) this._currentDamage;
         }
     }
@@ -68,6 +68,6 @@ public class CrumblingStrike() : CustomCardModel(1,
     {
         this.DynamicVars["Decrease"].UpgradeValueBy(-2m);
     }
-    
-    private void UpdateDamage() => this.CurrentDamage = (int)this.DynamicVars.Damage.BaseValue - this.DecreasedDamage;
+
+    private void UpdateDamage() => this.CurrentDamage -= this.DynamicVars["Decrease"].IntValue;
 }

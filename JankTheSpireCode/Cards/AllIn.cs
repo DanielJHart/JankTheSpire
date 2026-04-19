@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace JankTheSpire.JankTheSpireCode.Cards;
 
 [Pool(typeof(IroncladCardPool))]
-public class AllIn() : CustomCardModel(3, CardType.Skill,
+public class AllIn() : JankyCardModel(3, CardType.Skill,
     CardRarity.Rare, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>(10M), new PowerVar<DexterityPower>(10M)];

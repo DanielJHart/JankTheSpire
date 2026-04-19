@@ -1,6 +1,7 @@
 ﻿using BaseLib.Abstracts;
 using BaseLib.Utils;
 using HarmonyLib;
+using JankTheSpire.JankTheSpireCode.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -11,7 +12,7 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 namespace JankTheSpire.JankTheSpireCode.Cards;
 
 [Pool(typeof(DefectCardPool))]
-public class ControlV() : CustomCardModel(1, CardType.Skill,
+public class ControlV() : JankyCardModel(1, CardType.Skill,
     CardRarity.Uncommon, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];

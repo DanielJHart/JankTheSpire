@@ -60,7 +60,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="JankTheSpire\images\cards\" />
+      <Folder Include="JankTheSpire\images\cards\large\" />
     </ItemGroup>
 
     <Target Name="CheckDependencyPaths">

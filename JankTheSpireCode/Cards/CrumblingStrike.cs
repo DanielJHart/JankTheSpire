@@ -1,5 +1,6 @@
 ﻿using BaseLib.Abstracts;
 using BaseLib.Utils;
+using JankTheSpire.JankTheSpireCode.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -11,7 +12,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace JankTheSpire.JankTheSpireCode.Cards;
 
 [Pool(typeof(IroncladCardPool))]
-public class CrumblingStrike() : CustomCardModel(1,
+public class CrumblingStrike() : JankyCardModel(1,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)
 {

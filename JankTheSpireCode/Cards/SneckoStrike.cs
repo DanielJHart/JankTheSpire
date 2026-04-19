@@ -1,5 +1,6 @@
 ﻿using BaseLib.Abstracts;
 using BaseLib.Utils;
+using JankTheSpire.JankTheSpireCode.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
@@ -10,7 +11,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace JankTheSpire.JankTheSpireCode.Cards;
 
 [Pool(typeof(IroncladCardPool))]
-public class SneckoStrike() : CustomCardModel(4,
+public class SneckoStrike() : JankyCardModel(4,
     CardType.Attack, CardRarity.Common,
     TargetType.AllEnemies)
 {

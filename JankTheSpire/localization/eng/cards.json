@@ -1,4 +1,7 @@
 {
   "JANKTHESPIRE-CRUMBLING_STRIKE.description": "Deal {Damage:diff()} damage. Permanently decrease this card's damage by {Decrease:diff()}.",
-  "JANKTHESPIRE-CRUMBLING_STRIKE.title": "Crumbling Strike"
+  "JANKTHESPIRE-CRUMBLING_STRIKE.title": "Crumbling Strike",
+
+  "JANKTHESPIRE-ALL_IN.description": "Discard Hand. Next turn gain 99 Strength, lose 99 Dexterity.",
+  "JANKTHESPIRE-ALL_IN.title": "All In"
 }

@@ -3,5 +3,8 @@
   "JANKTHESPIRE-CRUMBLING_STRIKE.description": "Deal {Damage:diff()} damage. Permanently decrease this card's damage by {Decrease:diff()}.",
 
   "JANKTHESPIRE-ALL_IN.title": "All In",
-  "JANKTHESPIRE-ALL_IN.description": "Discard Hand. Next turn gain {StrengthPower:diff()} [gold]Strength[/gold] and lose {DexterityPower:diff()} [gold]Dexterity[/gold] for each card discarded."
+  "JANKTHESPIRE-ALL_IN.description": "Discard Hand. Next turn gain {StrengthPower:diff()} [gold]Strength[/gold] and lose {DexterityPower:diff()} [gold]Dexterity[/gold] for each card discarded.",
+
+  "JANKTHESPIRE-SNECKO_STRIKE.title": "Snecko Strike",
+  "JANKTHESPIRE-SNECKO_STRIKE.description": "Deal {Damage:diff()} damage. Randomize the cost of this card on draw."
 }

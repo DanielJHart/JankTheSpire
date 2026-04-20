@@ -9,5 +9,8 @@
   "JANKTHESPIRE-SNECKO_STRIKE.description": "Deal {Damage:diff()} damage. \nRandomize the cost of this card on draw.",
 
   "JANKTHESPIRE-CONTROL_V.title": "Ctrl + V",
-  "JANKTHESPIRE-CONTROL_V.description": "Add a copy of the last card played to your hand. \n{IfUpgraded:show: It is free to play this turn}"
+  "JANKTHESPIRE-CONTROL_V.description": "Add a copy of the last card played to your hand. \n{IfUpgraded:show: It is free to play this turn}",
+
+  "JANKTHESPIRE-WEE_WOO.title": "WEE WOO",
+  "JANKTHESPIRE-WEE_WOO.description": "Deal {CalculationBase:diff()} damage. Deals {ExtraDamageDescVar:diff()} less damage for each time another player has played a card this turn."
 }

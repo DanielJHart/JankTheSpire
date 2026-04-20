@@ -1,5 +1,9 @@
 ﻿{
   "JANKTHESPIRE-ALL_IN_POWER.title": "All In",
   "JANKTHESPIRE-ALL_IN_POWER.description": "",
-  "JANKTHESPIRE-ALL_IN_POWER.smartDescription": ""
+  "JANKTHESPIRE-ALL_IN_POWER.smartDescription": "",
+
+  "JANKTHESPIRE-REACTIVE_ARMOUR_POWER.title": "Reactive Armour",
+  "JANKTHESPIRE-REACTIVE_ARMOUR_POWER.description": "Whenever you lose HP on your turn, gain an equal amount of [Green]Plating[/Green].",
+  "JANKTHESPIRE-REACTIVE_ARMOUR_POWER.smartDescription": "Whenever you lose HP on your turn, gain an equal amount of [Green]Plating[/Green]."
 }

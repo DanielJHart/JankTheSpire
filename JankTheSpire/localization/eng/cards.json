@@ -12,5 +12,8 @@
   "JANKTHESPIRE-CONTROL_V.description": "Add a copy of the last card played to your hand. \n{IfUpgraded:show: It is free to play this turn}",
 
   "JANKTHESPIRE-WEE_WOO.title": "WEE WOO",
-  "JANKTHESPIRE-WEE_WOO.description": "Deal {CalculationBase:diff()} damage. Deals {ExtraDamageDescVar:diff()} less damage for each time another player has played a card this turn."
+  "JANKTHESPIRE-WEE_WOO.description": "Deal {CalculationBase:diff()} damage. \nDeals {ExtraDamageDescVar:diff()} less damage for each time another player has played a card this turn.",
+
+  "JANKTHESPIRE-REACTIVE_ARMOUR.title": "Reactive Armour",
+  "JANKTHESPIRE-REACTIVE_ARMOUR.description": "Whenever you lose HP on your turn, gain an equal amount of [gold]Plating[/gold]."
 }

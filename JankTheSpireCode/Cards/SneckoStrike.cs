@@ -13,7 +13,7 @@ namespace JankTheSpire.JankTheSpireCode.Cards;
 [Pool(typeof(IroncladCardPool))]
 public class SneckoStrike() : JankyCardModel(4,
     CardType.Attack, CardRarity.Common,
-    TargetType.AllEnemies)
+    TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(10, ValueProp.Move)];
 
@@ -21,6 +21,7 @@ public class SneckoStrike() : JankyCardModel(4,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
+        await CommonActions.CardAttack(this, play.Target).Execute(choiceContext);
     }
 
     public override Task AfterCardDrawn(PlayerChoiceContext choiceContext, CardModel card, bool fromHandDraw)

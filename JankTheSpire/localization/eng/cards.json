@@ -15,5 +15,14 @@
   "JANKTHESPIRE-WEE_WOO.description": "Deal {CalculationBase:diff()} damage. \nDeals {ExtraDamageDescVar:diff()} less damage for each time another player has played a card this turn.",
 
   "JANKTHESPIRE-REACTIVE_ARMOUR.title": "Reactive Armour",
-  "JANKTHESPIRE-REACTIVE_ARMOUR.description": "Whenever you lose HP on your turn, gain an equal amount of [gold]Plating[/gold]."
+  "JANKTHESPIRE-REACTIVE_ARMOUR.description": "Whenever you lose HP on your turn, gain an equal amount of [gold]Plating[/gold].",
+
+  "JANKTHESPIRE-BACK_AND_FORTH.title": "Back And Forth",
+  "JANKTHESPIRE-BACK_AND_FORTH.description": "Add [gold]{IfUpgraded:show:Back+|Back}[/gold] or [gold]{IfUpgraded:show:Forth+|Forth}[/gold] to your hand.",
+  
+  "JANKTHESPIRE-BACK.title": "Back",
+  "JANKTHESPIRE-BACK.description": "Gain {Block:diff()} [gold]Block[/gold]. \nAdd [gold]{IfUpgraded:show:Forth+|Forth}[/gold] to your discard pile.",
+
+  "JANKTHESPIRE-FORTH.title": "Forth",
+  "JANKTHESPIRE-FORTH.description": "Deal {Damage:diff()} damage. \nAdd [gold]{IfUpgraded:show:Back+|Back}[/gold] to your discard pile."
 }

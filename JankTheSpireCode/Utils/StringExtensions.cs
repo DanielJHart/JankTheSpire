@@ -11,4 +11,9 @@ public static class StringExtensions
     {
         return Path.Join(MainFile.ModId, "images", "cards", "large", path);
     }
+    
+    public static string PowerImagePath(this string path)
+    {
+        return Path.Join(MainFile.ModId, "images", "powers", path);
+    }
 }

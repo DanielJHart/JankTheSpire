@@ -1,12 +1,13 @@
 ﻿using BaseLib.Abstracts;
 using JankTheSpire.JankTheSpireCode.Cards;
+using JankTheSpire.JankTheSpireCode.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
 
-namespace JankTheSpire.JankTheSpireCode.Utils;
+namespace JankTheSpire.JankTheSpireCode.Powers;
 
 public sealed class AllInStrengthPower : TemporaryStrengthPower, ICustomPower
 {
@@ -19,7 +20,7 @@ public class AllInDexterityPower : TemporaryDexterityPower, ICustomPower
     protected override bool IsPositive => false;
 }
 
-public sealed class AllInPower : CustomPowerModel
+public sealed class AllInPower : JankyPowerModel
 {
     public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Counter;

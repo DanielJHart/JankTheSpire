@@ -1,4 +1,5 @@
 ﻿using BaseLib.Abstracts;
+using JankTheSpire.JankTheSpireCode.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
@@ -9,7 +10,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace JankTheSpire.JankTheSpireCode.Powers;
 
-public sealed class ReactiveArmourPower : CustomPowerModel
+public sealed class ReactiveArmourPower : JankyPowerModel
 {
     public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Single;

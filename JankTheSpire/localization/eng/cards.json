@@ -24,5 +24,8 @@
   "JANKTHESPIRE-BACK.description": "Gain {Block:diff()} [gold]Block[/gold]. \nAdd [gold]{IfUpgraded:show:Forth+|Forth}[/gold] to your discard pile.",
 
   "JANKTHESPIRE-FORTH.title": "Forth",
-  "JANKTHESPIRE-FORTH.description": "Deal {Damage:diff()} damage. \nAdd [gold]{IfUpgraded:show:Back+|Back}[/gold] to your discard pile."
+  "JANKTHESPIRE-FORTH.description": "Deal {Damage:diff()} damage. \nAdd [gold]{IfUpgraded:show:Back+|Back}[/gold] to your discard pile.",
+
+  "JANKTHESPIRE-QUICK_JAB.title": "Quick Jab",
+  "JANKTHESPIRE-QUICK_JAB.description": "Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold] if no other [gold]Vulnerable[/gold] has been applied this turn."
 }

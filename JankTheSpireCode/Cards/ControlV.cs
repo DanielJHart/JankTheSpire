@@ -1,6 +1,7 @@
 ﻿using BaseLib.Abstracts;
 using BaseLib.Utils;
 using HarmonyLib;
+using JankTheSpire.JankTheSpireCode.Orbs;
 using JankTheSpire.JankTheSpireCode.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;

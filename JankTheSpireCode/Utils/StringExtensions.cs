@@ -16,4 +16,9 @@ public static class StringExtensions
     {
         return Path.Join(MainFile.ModId, "images", "powers", path);
     }
+
+    public static string OrbImagePath(this string path)
+    {
+        return Path.Join(MainFile.ModId, "images", "orbs", path);
+    }
 }

@@ -1,0 +1,5 @@
+﻿{
+  "JANKTHESPIRE-POISON_ORB.title": "Poison",
+  "JANKTHESPIRE-POISON_ORB.description": "Orb: Applies [gold]Poison[/gold] to random enemies.",
+  "JANKTHESPIRE-POISON_ORB.smartDescription": "[gold]Passive:[/gold] At the end of turn, apply [blue]{Passive}[/blue] [gold]Poison[/gold] to a random enemy.\n[gold]Evoke:[/gold] Apply [blue]{Evoke}[/blue] [gold]Poison[/gold] to a random enemy."
+}

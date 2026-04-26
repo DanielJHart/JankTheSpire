@@ -21,6 +21,7 @@ public class ImHelping() : JankyRelicModel
         CardModel? cardSource)
     {
         if (power is StrengthPower && amount > 0 
+                                   && target == this.Owner.Creature
                                    && giver == this.Owner.Creature 
                                    && giver.CombatState != null)
         {

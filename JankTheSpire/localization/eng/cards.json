@@ -30,5 +30,8 @@
   "JANKTHESPIRE-QUICK_JAB.description": "Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold] if no other [gold]Vulnerable[/gold] has been applied this turn.",
 
   "JANKTHESPIRE-POISON_THE_WELL.title": "Poison The Well",
-  "JANKTHESPIRE-POISON_THE_WELL.description": "[gold]Channel[/gold] 1 [gold]Poison[/gold]."
+  "JANKTHESPIRE-POISON_THE_WELL.description": "[gold]Channel[/gold] 1 [gold]Poison[/gold].",
+
+  "JANKTHESPIRE-FREE_FOR_ALL.title": "Free For All",
+  "JANKTHESPIRE-FREE_FOR_ALL.description": "A random card in every players hand is free to play this turn."
 }

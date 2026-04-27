@@ -1,5 +1,6 @@
 ﻿using BaseLib.Abstracts;
 using BaseLib.Utils;
+using JankTheSpire.JankTheSpireCode.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Relics;
@@ -9,7 +10,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 namespace JankTheSpire.JankTheSpireCode.Relics;
 
 [Pool(typeof(SharedRelicPool))]
-public class BloodPhoenixStatue() : CustomRelicModel
+public class BloodPhoenixStatue() : JankyRelicModel
 {
     private bool _wasUsed = false;
     

@@ -4,6 +4,10 @@
   "JANKTHESPIRE-BLOOD_PHOENIX_STATUE.flavor": "[red]Details for this relic will be revealed in the future...[/red]",
 
   "JANKTHESPIRE-IM_HELPING.title": "I'm Helping",
-  "JANKTHESPIRE-IM_HELPING.description": "",
-  "JANKTHESPIRE-IM_HELPING.flavor": ""
+  "JANKTHESPIRE-IM_HELPING.description": "You can no longer gain strength. Any strength you gain is given to other players.",
+  "JANKTHESPIRE-IM_HELPING.flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+
+  "JANKTHESPIRE-RELIC_MIRROR.title": "Relic Mirror",
+  "JANKTHESPIRE-RELIC_MIRROR.description": "Upon pickup, duplicate a random relic.",
+  "JANKTHESPIRE-RELIC_MIRROR.flavor": "[red]Details for this relic will be revealed in the future...[/red]"
 }

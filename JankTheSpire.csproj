@@ -60,7 +60,10 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="JankTheSpire\images\atlases\relics\" />
       <Folder Include="JankTheSpire\images\cards\large\" />
+      <Folder Include="JankTheSpire\images\relics\outline_sprites\" />
+      <Folder Include="JankTheSpire\images\relics\sprites\" />
     </ItemGroup>
 
     <Target Name="CheckDependencyPaths">

@@ -36,5 +36,8 @@
   "JANKTHESPIRE-FREE_FOR_ALL.description": "A random card in every players hand is free to play this turn.",
 
   "JANKTHESPIRE-SUPERNOVA.title": "Supernova",
-  "JANKTHESPIRE-SUPERNOVA.description": "Consumes all {singleStarIcon} for {ChargeTime:diff()} turns, then explodes dealing {Damage:diff()} damage to ALL enemies for each {singleStarIcon} consumed."
+  "JANKTHESPIRE-SUPERNOVA.description": "Consumes all {singleStarIcon} for {ChargeTime:diff()} turns, then explodes dealing {Damage:diff()} damage to ALL enemies for each {singleStarIcon} consumed.",
+
+  "JANKTHESPIRE-CHOKEHOLD.title": "Chokehold",
+  "JANKTHESPIRE-CHOKEHOLD.description": "At the end of turn, [gold]Osty[/gold] deals {ChokeholdPower} damage until [gold]Osty[/gold] attacks or dies."
 }

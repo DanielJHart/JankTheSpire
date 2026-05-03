@@ -9,5 +9,9 @@
 
   "JANKTHESPIRE-SUPERNOVA_POWER.title": "Supernova",
   "JANKTHESPIRE-SUPERNOVA_POWER.description": "After 3 turns, deals damage to ALL enemies for each {singleStarIcon} consumed.",
-  "JANKTHESPIRE-SUPERNOVA_POWER.smartDescription": "In {TurnsLeft} {TurnsLeft:plural:turn|turns}, will deal [blue]{Amount}[/blue] damage to ALL enemies."
+  "JANKTHESPIRE-SUPERNOVA_POWER.smartDescription": "In {TurnsLeft} {TurnsLeft:plural:turn|turns}, will deal [blue]{Amount}[/blue] damage to ALL enemies.",
+
+  "JANKTHESPIRE-CHOKEHOLD_POWER.title": "Chokehold",
+  "JANKTHESPIRE-CHOKEHOLD_POWER.description": "Deals damage each turn until Osty attacks or dies.",
+  "JANKTHESPIRE-CHOKEHOLD_POWER.smartDescription": "Deals {Amount} damage at the end of turn until [gold]Osty[/gold] attack or dies."
 }

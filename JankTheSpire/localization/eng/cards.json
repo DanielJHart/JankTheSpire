@@ -33,5 +33,8 @@
   "JANKTHESPIRE-POISON_THE_WELL.description": "[gold]Channel[/gold] 1 [gold]Poison[/gold].",
 
   "JANKTHESPIRE-FREE_FOR_ALL.title": "Free For All",
-  "JANKTHESPIRE-FREE_FOR_ALL.description": "A random card in every players hand is free to play this turn."
+  "JANKTHESPIRE-FREE_FOR_ALL.description": "A random card in every players hand is free to play this turn.",
+
+  "JANKTHESPIRE-SUPERNOVA.title": "Supernova",
+  "JANKTHESPIRE-SUPERNOVA.description": "Consumes all {singleStarIcon} for {ChargeTime:diff()} turns, then explodes dealing {Damage:diff()} damage to ALL enemies for each {singleStarIcon} consumed."
 }

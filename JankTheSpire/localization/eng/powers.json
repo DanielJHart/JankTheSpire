@@ -5,5 +5,9 @@
 
   "JANKTHESPIRE-REACTIVE_ARMOUR_POWER.title": "Reactive Armour",
   "JANKTHESPIRE-REACTIVE_ARMOUR_POWER.description": "Whenever you lose HP on your turn, gain an equal amount of [gold]Plating[/gold].",
-  "JANKTHESPIRE-REACTIVE_ARMOUR_POWER.smartDescription": "Whenever you lose HP on your turn, gain an equal amount of [gold]Plating[/gold]."
+  "JANKTHESPIRE-REACTIVE_ARMOUR_POWER.smartDescription": "Whenever you lose HP on your turn, gain an equal amount of [gold]Plating[/gold].",
+
+  "JANKTHESPIRE-SUPERNOVA_POWER.title": "Supernova",
+  "JANKTHESPIRE-SUPERNOVA_POWER.description": "After 3 turns, deals damage to ALL enemies for each {singleStarIcon} consumed.",
+  "JANKTHESPIRE-SUPERNOVA_POWER.smartDescription": "In {TurnsLeft} {TurnsLeft:plural:turn|turns}, will deal [blue]{Amount}[/blue] damage to ALL enemies."
 }

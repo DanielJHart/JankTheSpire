@@ -42,7 +42,7 @@ public class BackAndForth() : JankyCardModel(0,
         if (this.IsUpgraded)
             CardCmd.Upgrade((IEnumerable<CardModel>) list, CardPreviewStyle.HorizontalLayout);
         
-        CardModel card = await CardSelectCmd.FromChooseACardScreen(choiceContext, (IReadOnlyList<CardModel>) list, this.Owner);
+        CardModel? card = await CardSelectCmd.FromChooseACardScreen(choiceContext, (IReadOnlyList<CardModel>) list, this.Owner);
         
         if (card == null)
             return;

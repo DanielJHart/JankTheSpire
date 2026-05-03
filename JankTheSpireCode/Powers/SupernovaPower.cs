@@ -25,7 +25,7 @@ public class SupernovaPower : JankyPowerModel
             return (IEnumerable<DynamicVar>) [(DynamicVar) 
                 new CalculationBaseVar(1m),
                 new CalculationExtraVar(1m),
-                new TrackedPowerVar("TurnsLeft").WithTracked((power, creature) => (power as SupernovaPower).TurnsLeft)];
+                new TrackedPowerVar("TurnsLeft").WithTracked((power, creature) =>  ((power as SupernovaPower)!).TurnsLeft)];
         }
     }
 
@@ -97,7 +97,7 @@ public class SupernovaPower : JankyPowerModel
             {
                 // Explode
                 this.Flash();
-                IEnumerable<DamageResult> damageResults = await CreatureCmd.Damage((PlayerChoiceContext) new BlockingPlayerChoiceContext(), (IEnumerable<Creature>) this.CombatState.HittableEnemies, (Decimal) this.Amount, ValueProp.Unpowered, this.Owner, (CardModel) null);
+                IEnumerable<DamageResult> damageResults = await CreatureCmd.Damage((PlayerChoiceContext) new BlockingPlayerChoiceContext(), (IEnumerable<Creature>) this.CombatState.HittableEnemies, (Decimal) this.Amount, ValueProp.Unpowered, this.Owner, null);
                 used = true;
             }
         }

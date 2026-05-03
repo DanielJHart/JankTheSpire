@@ -24,10 +24,14 @@ public class BackAndForthUtility : SingletonModel
 
     private async Task TransformCard<A>(CardModel CardToTransform) where A : CardModel
     {
-        CardModel newCard = CardToTransform.CombatState.CreateCard<Forth>(CardToTransform.Owner);
-        if (CardToTransform.IsUpgraded)
-            CardCmd.Upgrade(newCard);
+        CardModel? newCard = CardToTransform.CombatState?.CreateCard<Forth>(CardToTransform.Owner);
 
-        await CardCmd.Transform(CardToTransform, newCard);
+        if (newCard != null)
+        {
+            if (CardToTransform.IsUpgraded)
+                CardCmd.Upgrade(newCard);
+
+            await CardCmd.Transform(CardToTransform, newCard);
+        }
     }
 }

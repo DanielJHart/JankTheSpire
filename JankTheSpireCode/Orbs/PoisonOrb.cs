@@ -19,7 +19,7 @@ public class PoisonOrb : JankyOrbModel
     public override Decimal PassiveVal => this.ModifyOrbValue(1M);
     public override Decimal EvokeVal => this.ModifyOrbValue(3M);
     
-    public virtual bool IncludeInRandomPool => true;
+    public override bool IncludeInRandomPool => true;
     
     public override async Task BeforeTurnEndOrbTrigger(PlayerChoiceContext choiceContext)
     {

@@ -28,8 +28,11 @@ public class Back() : JankyCardModel(1, CardType.Skill,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CreatureCmd.GainBlock(this.Owner.Creature, this.DynamicVars.Block, play);
-        CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat((CardModel) CombatState.CreateCard<Forth>(this.Owner), PileType.Discard, true));
+        if (CombatState != null)
+        {
+            await CreatureCmd.GainBlock(this.Owner.Creature, this.DynamicVars.Block, play);
+            CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat((CardModel) CombatState.CreateCard<Forth>(this.Owner), PileType.Discard, true));
+        }
     }
 
     protected override void OnUpgrade()

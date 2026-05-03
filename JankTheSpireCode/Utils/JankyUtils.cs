@@ -31,11 +31,15 @@ public class TrackedPowerVar(string name) : DynamicVar(name, 0M)
     
     public Decimal Calculate(Creature? target)
     {
+        Decimal result = 0;
         if (this._trackedCalc == null)
             throw new InvalidOperationException("Extra multiplier calc must be specified!");
-        PowerModel owner = (PowerModel) this._owner;
-        Decimal num = !CombatManager.Instance.IsInProgress || owner.CombatState == null ? 0M : this._trackedCalc(owner, target);
-        return num;
+        if (this._owner != null)
+        {
+            PowerModel owner = (PowerModel) this._owner;
+            result = !CombatManager.Instance.IsInProgress ? 0M : this._trackedCalc(owner, target);
+        }
+        return result;
     }
     
     public override void UpdateCardPreview(
@@ -49,17 +53,17 @@ public class TrackedPowerVar(string name) : DynamicVar(name, 0M)
     
     protected virtual DynamicVar GetBaseVar()
     {
-        return (DynamicVar) ((PowerModel) this._owner).DynamicVars.CalculationBase;
+        return (DynamicVar) (((PowerModel) this._owner!)!).DynamicVars.CalculationBase;
     }
 
     protected virtual DynamicVar GetExtraVar()
     {
-        return (DynamicVar) ((PowerModel) this._owner).DynamicVars.CalculationExtra;
+        return (DynamicVar) (((PowerModel) this._owner!)!).DynamicVars.CalculationExtra;
     }
     
-    protected override Decimal GetBaseValueForIConvertible() => this.Calculate((Creature) null);
+    protected override Decimal GetBaseValueForIConvertible() => this.Calculate(null);
 
-    public override string ToString() => this.Calculate((Creature) null).ToString();
+    public override string ToString() => this.Calculate(null).ToString();
     
     private void UpdateValues()
     {

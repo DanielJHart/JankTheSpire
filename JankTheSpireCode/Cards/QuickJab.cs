@@ -35,7 +35,10 @@ public class QuickJab() : JankyCardModel(0, CardType.Skill,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await PowerCmd.Apply<VulnerablePower>(play.Target, this.DynamicVars.Vulnerable.BaseValue, this.Owner.Creature, this);
+        if (play.Target != null)
+        {
+            await PowerCmd.Apply<VulnerablePower>(play.Target, this.DynamicVars.Vulnerable.BaseValue, this.Owner.Creature, this);
+        }
     }
 
     protected override void OnUpgrade()
@@ -45,7 +48,7 @@ public class QuickJab() : JankyCardModel(0, CardType.Skill,
 
     public override Task AfterCardGeneratedForCombat(CardModel card, bool addedByPlayer)
     {
-        if (card == this)
+        if (card == this && this.CombatState != null)
         {
             foreach (Creature enemy in this.CombatState.Enemies)
             {

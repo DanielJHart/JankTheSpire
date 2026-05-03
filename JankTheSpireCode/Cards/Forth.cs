@@ -26,8 +26,11 @@ public class Forth() : JankyCardModel(1, CardType.Attack,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CommonActions.CardAttack(this, play.Target).Execute(choiceContext);
-        CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat((CardModel) CombatState.CreateCard<Back>(this.Owner), PileType.Discard, true));
+        if (CombatState != null)
+        {
+            await CommonActions.CardAttack(this, play.Target).Execute(choiceContext);
+            CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat((CardModel) CombatState.CreateCard<Back>(this.Owner), PileType.Discard, true));
+        }
     }
 
     protected override void OnUpgrade()

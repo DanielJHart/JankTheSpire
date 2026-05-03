@@ -22,7 +22,7 @@ public class Supernova() : JankyCardModel(3, CardType.Skill,
         CardPlay play)
     {
         // Add Supernova power to player
-        PowerCmd.Apply<SupernovaPower>(this.Owner.Creature, this.DynamicVars.Damage.BaseValue, this.Owner.Creature, this);
+        await PowerCmd.Apply<SupernovaPower>(this.Owner.Creature, this.DynamicVars.Damage.BaseValue, this.Owner.Creature, this);
     }
 
     protected override void OnUpgrade()

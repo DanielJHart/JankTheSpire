@@ -9,5 +9,9 @@
 
   "JANKTHESPIRE-RELIC_MIRROR.title": "Relic Mirror",
   "JANKTHESPIRE-RELIC_MIRROR.description": "Upon pickup, duplicate a random relic.",
-  "JANKTHESPIRE-RELIC_MIRROR.flavor": "[red]Details for this relic will be revealed in the future...[/red]"
+  "JANKTHESPIRE-RELIC_MIRROR.flavor": "[red]Details for this relic will be revealed in the future...[/red]",
+
+  "JANKTHESPIRE-AVARICE_FA_H.title": "Avarice F.A.H.",
+  "JANKTHESPIRE-AVARICE_FA_H.description": "Deal 10% increased damage for every 100 gold. No longer works when you spend any gold at the shop.",
+  "JANKTHESPIRE-AVARICE_FA_H.flavor": "[red]Details for this relic will be revealed in the future...[/red]"
 }

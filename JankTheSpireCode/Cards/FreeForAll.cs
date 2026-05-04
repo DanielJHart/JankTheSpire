@@ -1,5 +1,6 @@
 ﻿using BaseLib.Abstracts;
 using BaseLib.Utils;
+using JankTheSpire.JankTheSpireCode.Utils;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -14,7 +15,7 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 namespace JankTheSpire.JankTheSpireCode.Cards;
 
 [Pool(typeof(ColorlessCardPool))]
-public class FreeForAll() : CustomCardModel(2, CardType.Skill,
+public class FreeForAll() : JankyCardModel(2, CardType.Skill,
     CardRarity.Uncommon, TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];

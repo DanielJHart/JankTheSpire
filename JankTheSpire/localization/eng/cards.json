@@ -39,5 +39,8 @@
   "JANKTHESPIRE-SUPERNOVA.description": "Consumes all {singleStarIcon} for {ChargeTime:diff()} turns, then explodes dealing {Damage:diff()} damage to ALL enemies for each {singleStarIcon} consumed.",
 
   "JANKTHESPIRE-CHOKEHOLD.title": "Chokehold",
-  "JANKTHESPIRE-CHOKEHOLD.description": "At the end of turn, [gold]Osty[/gold] deals {ChokeholdPower} damage until [gold]Osty[/gold] attacks or dies."
+  "JANKTHESPIRE-CHOKEHOLD.description": "At the end of turn, [gold]Osty[/gold] deals {ChokeholdPower} damage until [gold]Osty[/gold] attacks or dies.",
+
+  "JANKTHESPIRE-RIGHTFULLY_MINE.title": "Rightfully Mine",
+  "JANKTHESPIRE-RIGHTFULLY_MINE.description": "Copy all buffs and debuffs on an enemy to you."
 }
